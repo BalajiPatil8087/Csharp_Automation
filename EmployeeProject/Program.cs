@@ -14,6 +14,7 @@ namespace  Maveric.Runner;
         Employee emp1 = new Employee();
         Employee emp2 = new Employee();
         Employee emp3 = new Employee();
+        Employee emp4 = new Employee();
 
         emp1.empID = 101;
         emp1.Empname = "saul";
@@ -44,6 +45,17 @@ namespace  Maveric.Runner;
         Console.WriteLine(emp3.empID);
         Console.WriteLine(emp3.Empname);
         Console.WriteLine(emp3.empSalary);
+
+
+        Console.WriteLine("******************");
+
+        emp2.PrintEmployeeDetail();
+
+        Console.WriteLine("******************");
+
+        emp4.PrintEmployeeDetail();
+
+
 
         Console.WriteLine(Employee.companyName);
         Console.WriteLine(Employee.companyLocation);

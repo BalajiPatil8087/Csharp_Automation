@@ -14,6 +14,16 @@ namespace EmployeeProject
         public static string companyName;
         public static string companyLocation;
 
+        public void PrintEmployeeDetail()
+        {
+            Console.WriteLine("Employee ID: "+empID);
+            Console.WriteLine("Employee Name: " +Empname);
+            Console.WriteLine("Employee Salary: " +empSalary);
+            Console.WriteLine("Company Name "+Employee.companyName);
+            Console.WriteLine("Company Location " + Employee.companyLocation);
+
+        }
+
 
     }
 }
