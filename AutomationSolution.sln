@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpConcept", "CSharpConc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpAssignment", "CSharpAssignment\CSharpAssignment.csproj", "{4FD92E13-0A55-486C-95B7-9FB5EB938E68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeProject", "EmployeeProject\EmployeeProject.csproj", "{6ED16463-3B44-44CD-8875-CB9AD4147640}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4FD92E13-0A55-486C-95B7-9FB5EB938E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FD92E13-0A55-486C-95B7-9FB5EB938E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FD92E13-0A55-486C-95B7-9FB5EB938E68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED16463-3B44-44CD-8875-CB9AD4147640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED16463-3B44-44CD-8875-CB9AD4147640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED16463-3B44-44CD-8875-CB9AD4147640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED16463-3B44-44CD-8875-CB9AD4147640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
