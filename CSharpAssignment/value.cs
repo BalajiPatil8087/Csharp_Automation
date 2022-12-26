@@ -9,7 +9,7 @@ namespace CSharpAssignment
 {
     public class value
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             //Calling Volumn Related Formula
             //printing my name
