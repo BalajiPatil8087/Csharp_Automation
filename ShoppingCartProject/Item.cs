@@ -23,17 +23,24 @@ namespace ShoppingCartProject
         }
         public void PrintDiscountPrice()
         {
+            //Discount calculation
             if (Quantity == 2)
             {
-                Console.WriteLine(Price + (Price * 10 / 100));
+                 double price=(Price - (Price * 10 / 100))*Quantity;
+                Console.WriteLine(price);
+               
             }
-            else if(Quantity>=3 && Quantity <= 5)
+            else if(Quantity>=3 && Quantity < 5)
             {
-                Console.WriteLine(Price + (Price * 15 / 100));
+                double price = (Price - (Price * 15 / 100)) * Quantity;
+                Console.WriteLine(price);
+
             }
             else if (Quantity >= 5)
             {
-                Console.WriteLine(Price + (Price * 25 / 100));
+
+                double price = (Price - (Price * 25 / 100)) * Quantity;
+                Console.WriteLine(price);
             }
             else
             {
