@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpAssignment", "CSharpA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeProject", "EmployeeProject\EmployeeProject.csproj", "{6ED16463-3B44-44CD-8875-CB9AD4147640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagement", "SchoolManagement\SchoolManagement.csproj", "{A213E884-39B9-4169-9E6A-75CC2C507642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagement", "SchoolManagement\SchoolManagement.csproj", "{A213E884-39B9-4169-9E6A-75CC2C507642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartProject", "ShoppingCartProject\ShoppingCartProject.csproj", "{76D16FA0-CE14-493E-BDE9-5A3232D71CE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A213E884-39B9-4169-9E6A-75CC2C507642}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A213E884-39B9-4169-9E6A-75CC2C507642}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A213E884-39B9-4169-9E6A-75CC2C507642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D16FA0-CE14-493E-BDE9-5A3232D71CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D16FA0-CE14-493E-BDE9-5A3232D71CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D16FA0-CE14-493E-BDE9-5A3232D71CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D16FA0-CE14-493E-BDE9-5A3232D71CE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
