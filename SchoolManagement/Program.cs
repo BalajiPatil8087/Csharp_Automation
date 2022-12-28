@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SchoolManagement
 {
-    public  class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -21,7 +21,7 @@ namespace SchoolManagement
             Student.SchoolName = "Global school";
             Student.SchoolAddress = "chennai";
 
-            
+
 
             stud2.StudentId = 1002;
             stud2.StudentName = "peter";
@@ -30,7 +30,7 @@ namespace SchoolManagement
             Student.SchoolName = "Global school";
             Student.SchoolAddress = "chennai";
 
-            
+
 
             stud3.StudentId = 1003;
             stud3.StudentName = "mark";
@@ -39,7 +39,7 @@ namespace SchoolManagement
             Student.SchoolName = "Global school";
             Student.SchoolAddress = "chennai";
 
-           
+
 
             stud1.PrintStudentDetails();
             stud1.DisplayCertification();

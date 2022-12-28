@@ -12,10 +12,10 @@ namespace SchoolManagement
         public string StudentName;
         public string StudentMailID;
         public double Percentage;
-        public static  string SchoolName;
+        public static string SchoolName;
         public static string SchoolAddress;
 
-     public void PrintStudentDetails()
+        public void PrintStudentDetails()
         {
             Console.WriteLine("Student ID:" + StudentId);
             Console.WriteLine("Student Name:" + StudentName);
@@ -26,18 +26,18 @@ namespace SchoolManagement
         }
         public void DisplayCertification()
         {
-            if(Percentage>=90 && Percentage<=100)
+            if (Percentage >= 90 && Percentage <= 100)
             {
                 Console.WriteLine("Hi " + StudentName + "You have successfully passed with grade A ");
             }
-            else if(Percentage>=80 && Percentage <= 89)
+            else if (Percentage >= 80 && Percentage <= 89)
             {
                 Console.WriteLine("Hi " + StudentName + "You have successfully passed with grade B ");
-           }
-            else if(Percentage>=60 && Percentage <= 79)
+            }
+            else if (Percentage >= 60 && Percentage <= 79)
             {
                 Console.WriteLine("Hi " + StudentName + "You have successfully passed with grade c ");
-                
+
             }
             else
             {
@@ -45,6 +45,6 @@ namespace SchoolManagement
             }
 
         }
-        }
- }
+    }
+}
 
