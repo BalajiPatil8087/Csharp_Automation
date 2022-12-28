@@ -8,6 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="FaceBook.cs" />
+    <Compile Remove="Guru.cs" />
+    <Compile Remove="ParaBank.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="FaceBook.cs" />
+    <None Include="Guru.cs" />
+    <None Include="ParaBank.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Selenium.Support" Version="4.7.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="108.0.5359.7100" />
   </ItemGroup>

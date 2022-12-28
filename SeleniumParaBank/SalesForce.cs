@@ -20,22 +20,19 @@ namespace SeleniumParaBank
             driver.FindElement(By.Name("UserLastName")).SendKeys("Wick");
             driver.FindElement(By.Name("UserEmail")).SendKeys("John@gmail.com");
 
-
-
             SelectElement dropdown = new SelectElement(driver.FindElement(By.Name("UserTitle")));
             dropdown.SelectByIndex(4);
 
             driver.FindElement(By.Name("CompanyName")).SendKeys("Maveric");
 
 
-
             SelectElement dropdown1 = new SelectElement(driver.FindElement(By.Name("CompanyEmployees")));
             dropdown1.SelectByIndex(3);
 
-            driver.FindElement(By.Name("UserPhone")).SendKeys("");
+            //driver.FindElement(By.Name("UserPhone")).SendKeys("");
 
             SelectElement dropdown4 = new SelectElement(driver.FindElement(By.Name("CompanyCountry")));
-            dropdown4.SelectByValue("United Kingdom");
+            dropdown4.SelectByText("United Kingdom");
 
             driver.FindElement(By.ClassName("checkbox-ui")).Click();
 
