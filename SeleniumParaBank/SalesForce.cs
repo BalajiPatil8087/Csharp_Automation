@@ -14,14 +14,19 @@ namespace SeleniumParaBank
         static void Main(String[] args)
         {
             IWebDriver driver = new ChromeDriver();
+
+        
+        driver.Manage().Timeouts().ImplicitWait =TimeSpan.FromSeconds(30);
+           
             driver.Url = "https://www.salesforce.com/in/form/signup/freetrial-sales/";
+            driver.Manage().Window.Maximize();
 
             driver.FindElement(By.Name("UserFirstName")).SendKeys("John");
             driver.FindElement(By.Name("UserLastName")).SendKeys("Wick");
             driver.FindElement(By.Name("UserEmail")).SendKeys("John@gmail.com");
 
             SelectElement dropdown = new SelectElement(driver.FindElement(By.Name("UserTitle")));
-            dropdown.SelectByIndex(4);
+            dropdown.SelectByIndex(5);
 
             driver.FindElement(By.Name("CompanyName")).SendKeys("Maveric");
 
