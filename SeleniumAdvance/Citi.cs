@@ -69,7 +69,7 @@ namespace SeleniumAdvance
             // string text = driver.FindElement(By.XPath("//p[contains(text(),'We are unable to process your request. Please try again later.')]")).Text;
             //Console.WriteLine(text);
 
-            
+            //driver.SwitchTo().Window(driver.WindowHandles[2]);
 
             string s=driver.FindElement(By.XPath("(//li[contains(text(),'• Please accept Terms and Conditions ')])[3]")).Text;
             Console.WriteLine(s);
