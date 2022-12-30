@@ -26,7 +26,7 @@ namespace MediBuddy
             driver.FindElement(By.Name("password")).SendKeys("John123");
             driver.FindElement(By.XPath("//input[@type='checkbox']")).Click();
             driver.FindElement(By.XPath("//button[text()='Log in']")).Click();
-           // Thread.Sleep(1000);
+          //  driver.FindElement(By.XPath(""))
            
 
         }
