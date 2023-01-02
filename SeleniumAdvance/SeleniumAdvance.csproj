@@ -9,11 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Citi.cs" />
+    <Compile Remove="FrameTest.cs" />
     <Compile Remove="MultipletabsTest.cs" />
+    <Compile Remove="OpenMr.cs" />
+    <Compile Remove="RedBus.cs" />
+    <Compile Remove="SubScriptionTest.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Citi.cs" />
+    <None Include="FrameTest.cs" />
     <None Include="MultipletabsTest.cs" />
+    <None Include="OpenMr.cs" />
+    <None Include="RedBus.cs" />
+    <None Include="SubScriptionTest.cs" />
   </ItemGroup>
 
   <ItemGroup>
