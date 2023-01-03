@@ -20,17 +20,25 @@ namespace SeleniumAdvance
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
-            driver.Url = "https://phptravels.net/";
-            driver.FindElement(By.XPath("(//i[@class='la la-angle-down'])[3]")).Click();
-            driver.FindElement(By.LinkText("English")).Click();
-            driver.FindElement(By.XPath("//a[@class='active_flights waves-effect']")).Click();
-            driver.FindElement(By.XPath("//input[@id='autocomplete']")).SendKeys("Los Angeles (LAX)");
-            driver.FindElement(By.XPath("//input[@id='autocomplete2']")).SendKeys("Dallas (DAL)");
-            driver.ExecuteJavaScript(("document.querySelector('#departure').value='2022-05-30';"));
-            driver.FindElement(By.XPath("//a[@class='dropdown-toggle dropdown-btn travellers waves-effect']")).Click();
-            driver.FindElement(By.ClassName(" dropdown-item adult_qty")).Click();
-            driver.FindElement(By.ClassName("(//div[@class='qtyInc'])[1]")).Click();
-           // driver.FindElement(By.XPath("(//i[@class='la la-plus'])[1]")).Click();
+            driver.Url = "https://www.phptravels.net/home";
+            driver.FindElement(By.XPath("//a[text()='flights']")).Click();
+
+            Thread.Sleep(20000);
+            driver.FindElement(By.Id("autocomplete")).SendKeys("PNQ");
+            driver.FindElement(By.XPath("//b[text()='PNQ']")).Click();
+
+            driver.FindElement(By.Id("autocomplete2")).SendKeys("BLR");
+            driver.FindElement(By.XPath("//b[text()='BLR']")).Click();
+            
+            driver.FindElement(By.Id("departure")).Clear();
+            driver.FindElement(By.Id("departure")).SendKeys("7-01-2023");
+            driver.FindElement(By.XPath("//p[contains(text(),'Travellers ')]")).Click();
+            driver.FindElement(By.XPath("//i[@class='la la-plus']")).Click();
+            driver.FindElement(By.Id("flights-search")).Click();
+            Thread.Sleep(40000);
+            
+            string print = driver.FindElement(By.XPath("//div[@class='theme-search-results-item-preview']")).Text;
+            Console.WriteLine(print);
 
         }
     }

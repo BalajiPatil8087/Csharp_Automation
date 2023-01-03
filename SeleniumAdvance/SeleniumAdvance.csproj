@@ -13,7 +13,9 @@
     <Compile Remove="FrameTest.cs" />
     <Compile Remove="MultipletabsTest.cs" />
     <Compile Remove="OpenMr.cs" />
+    <Compile Remove="PhpTravels.cs" />
     <Compile Remove="RedBus.cs" />
+    <Compile Remove="Royal.cs" />
     <Compile Remove="SubScriptionTest.cs" />
   </ItemGroup>
 
@@ -22,7 +24,9 @@
     <None Include="FrameTest.cs" />
     <None Include="MultipletabsTest.cs" />
     <None Include="OpenMr.cs" />
+    <None Include="PhpTravels.cs" />
     <None Include="RedBus.cs" />
+    <None Include="Royal.cs" />
     <None Include="SubScriptionTest.cs" />
   </ItemGroup>
 
