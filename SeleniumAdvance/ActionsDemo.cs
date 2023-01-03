@@ -32,15 +32,10 @@ namespace Maveric.SeleniumAdvance
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-
             driver.Url = "https://nasscom.in/about-us/contact-us";
-
             Actions actions = new Actions(driver);
-
             actions.MoveToElement(driver.FindElement(By.XPath("//a[text()='Membership']"))).Perform();
-
             actions.MoveToElement(driver.FindElement(By.XPath("//a[text()='Become a Member']"))).Perform();
-
             driver.FindElement(By.XPath("//a[text()='Membership Benefits']")).Click();
 
 
@@ -51,14 +46,9 @@ namespace Maveric.SeleniumAdvance
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-
             driver.Url = "https://nasscom.in/about-us/contact-us";
-
             Actions actions = new Actions(driver);
-
-            actions.MoveToElement(driver.FindElement(By.XPath("//a[text()='Membership']")))
-                .MoveToElement(driver.FindElement(By.XPath("//a[text()='Become a Member']"))).Build().Perform();
-
+            actions.MoveToElement(driver.FindElement(By.XPath("//a[text()='Membership']"))) .MoveToElement(driver.FindElement(By.XPath("//a[text()='Become a Member']"))).Build().Perform();
             driver.FindElement(By.XPath("//a[text()='Membership Benefits']")).Click();
 
 
@@ -76,8 +66,7 @@ namespace Maveric.SeleniumAdvance
             Actions actions = new Actions(driver);
 
             actions.KeyDown(Keys.Shift).SendKeys("hello world").KeyUp(Keys.Shift).Pause(TimeSpan.FromSeconds(1))
-                .SendKeys(Keys.ArrowDown).SendKeys(Keys.ArrowDown).SendKeys(Keys.ArrowDown).Pause(TimeSpan.FromSeconds(1))
-                .SendKeys(Keys.Enter).Build().Perform();
+           .SendKeys(Keys.ArrowDown).SendKeys(Keys.ArrowDown).SendKeys(Keys.ArrowDown).Pause(TimeSpan.FromSeconds(1)).SendKeys(Keys.Enter).Build().Perform();
 
         }
     }
